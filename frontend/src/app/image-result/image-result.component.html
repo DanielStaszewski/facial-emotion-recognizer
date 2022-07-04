@@ -1,0 +1,34 @@
+
+<h1 class="image-result__title">Facial Emotion Recognizer</h1>
+<div class="image-result__wrapper">
+    <div class="image-result__content">
+        <div class="image-result__image-wrapper">
+            <img [src]="imgUrl" alt="image" class="image-result__image">
+        </div>
+        <div class="image-result__right">
+            <div class="image-result__description">
+                <span class="image-result__label">Detected emotion:</span>
+                <h1 class="image-result__emotion">{{detectedEmotion}}</h1>
+            </div>
+            <div class="image-result__poll">
+                <h2 class="poll__title">Do you agree with the result of the algorithm?</h2>
+                <div class="poll">
+                    <div class="image-result__btns" *ngIf="!isVoted">
+                        <button class="image-result__btn btn--valid" (click)="setUserResult(true)">
+                            <img class="btn__icon" src="../../assets/like.svg" alt="thumb">
+                            <span class="btn__text">Yes</span>
+                        </button>
+                        <button class="image-result__btn btn--invalid" (click)="setUserResult(false)">
+                            <img class="btn__icon" src="../../assets/like.svg" alt="thumb">
+                            <span class="btn__text">No</span>
+                        </button>
+                    </div>
+                    <span *ngIf="isVoted" class="emotion__vote">Thank you for voting! Thanks to you, we will be able to improve our program!</span>
+                </div>
+            </div>
+    
+            <a class="back-link" (click)="onBack()">Go back to upload window</a>
+        </div>
+    </div>
+    
+</div>

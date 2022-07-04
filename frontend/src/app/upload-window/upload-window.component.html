@@ -1,0 +1,57 @@
+<ng-container> 
+    <div class="upload-window-wrapper"> 
+        <div class="upload-window-container">
+            <div class="upload-window">
+                <div class="instruction-box">
+                    <h1 class="instruction-title" >
+                        How to use facial emotion recognizer?
+                    </h1>
+                    <span class="instruction-step">
+                        1. Choose or drag and drop the file
+                    </span>
+                    <span class="instruction-step">
+                        2. Wait for the file to be processed
+                    </span>
+                    <span class="instruction-step">
+                        3. The detected affective state will be displayed with the photo
+                    </span>
+                </div>
+                <div class="upload-box">
+                    <h3 class="upload-title">
+                        Drag one file onto the page
+                    </h3>
+                    <div class="upload-btn-wrapper">
+                        <button class="upload-btn" (click)="onUploadAreaClicked($event)">
+                           Choose file
+                        </button>
+                    </div>
+                    <p class="upload-desc">
+                        <span>
+                            acceptable formats are .jpg .jpeg and .png
+                        </span>
+                    </p>
+                </div>
+                <div class="static-box"></div>
+            </div>
+        </div>
+        <input id="upload-link" #uploadLink accept=".jpg,.jpeg,.png" type="file"
+            (change)="onFileSelected($event)" />
+    </div>
+
+    <div class="drag-area-box" #dragArea>
+        <h1 class="drag-area-text">
+            Drop your file here
+        </h1>
+    </div>
+</ng-container>
+
+<!-- 
+<shared-components-custom-modal 
+*ngIf="quoteModalOpen" 
+title="{{'QuoteConfigurator.CustomUploadWindow.FileLimit' | translation}}" 
+cancelButton="Cancel"
+(cancelClicked)="cancelClicked()">
+    <span class="modal-text" libInlineTranslation="QuoteConfigurator.CustomUploadWindow.ModalText">
+        {{"QuoteConfigurator.CustomUploadWindow.ModalText" | translation}}
+    </span>
+</shared-components-custom-modal> -->

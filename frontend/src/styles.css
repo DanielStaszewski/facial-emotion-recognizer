@@ -1,0 +1,74 @@
+
+
+:root{
+    --white: #ffffff;
+    --gray300: #F5F5F5;
+    --gray400: #E0E0E0;
+    --gray450: #D2D2D2;
+    --gray500: #9E9E9E;
+    --gray600: #757575;
+    --gray700: #424242;
+    --gray900: #212121;
+    
+    --primary: #002C51;
+    --primary10: #E5E9ED;
+    --link: #0064A3;
+    --secondary: #F39200;
+    --success: #3C9526;
+    --success10: rgba(60, 149, 38, 0.1);
+    --error: #EF0B0B;
+    --error10: rgba(239, 11, 11, 0.10);
+    --tertiary: #00d099;
+    --tertiary10: #b1ebd2;
+    }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+* {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+h2{
+    font-size: 31px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+span, p, button, div{
+    font-family: 'Readex Pro', 'Lato', 'Arial', sans-serif, 
+}
+
+button,a{
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.mat-checkbox .mat-checkbox-ripple{
+  display: none;
+}
+
+.body-container{
+    overflow: hidden;
+}
+
+

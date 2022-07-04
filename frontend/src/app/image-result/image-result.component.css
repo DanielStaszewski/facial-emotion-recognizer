@@ -1,0 +1,154 @@
+.image-result__wrapper{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    padding: 50px 100px;
+    max-width: 1600px;
+}
+
+.image-result__title{
+    width: 100%;
+    font-size: 30px;
+    letter-spacing: 1px;
+    height: 70px !important;
+}
+
+.image-result__content{
+    display: flex;
+}
+
+.image-result__image-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 60%;
+    padding-right: 30px;
+}
+
+.image-result__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.image-result__image{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.image-result__description{
+    margin-bottom: 20px;
+}
+
+.image-result__label{
+    font-size: 20px;
+}
+
+.image-result__emotion{
+    font-size: 36px;
+}
+
+.image-result__poll{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    min-width: 600px;
+}
+
+.poll__title{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.image-result__btns{
+    display: flex;
+}
+
+.image-result__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    background: white;
+}
+
+.btn--valid{
+    color: #3C9526;
+    border-color: #3C9526;
+    margin-right: 15px;
+}
+
+.btn--valid:hover{
+    color: white;
+    background-color: #3C9526;
+}
+
+.btn--invalid{
+    color: #EF0B0B;
+    border-color: #EF0B0B;
+}
+
+.btn--invalid:hover{
+    color: white;
+    background-color: #EF0B0B;
+}
+
+.btn__icon{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.btn--valid .btn__icon{
+    filter: brightness(0) saturate(100%) invert(48%) sepia(40%) saturate(851%) hue-rotate(62deg) brightness(91%) contrast(88%);
+}
+
+.btn--invalid .btn__icon{
+    filter: brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(3618%) hue-rotate(352deg) brightness(116%) contrast(111%);
+    transform: rotate(180deg);
+}
+
+.image-result__btn:hover .btn__icon{
+    filter: brightness(0) saturate(100%) invert(87%) sepia(99%) saturate(2%) hue-rotate(28deg) brightness(106%) contrast(101%);
+}
+
+.poll{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.emotion__vote{
+    color: #3C9526;
+    font-size: 16px;
+}
+
+.back-link{
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+
+
+
+

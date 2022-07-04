@@ -1,0 +1,23 @@
+<!-- <label class="image-upload-container btn btn-bwm">
+  <span>Select Image</span>
+  <input #imageInput
+         type="file"
+         accept="image/*"
+         (change)="processImage($event)">
+</label>
+ -->
+
+
+<div class="container">
+    <div class="upload-window-container" *ngIf="isUploadWindowOpen">
+        <app-upload-window (uploadImageEvent)="processImage($event)"></app-upload-window>
+    </div>
+
+    <div *ngIf="!isUploadWindowOpen" class="quote-wizard-wrapper">
+      <app-image-result (backEvent)="onBackEvent($event)" [imgUrl]="url" [detectedEmotion]="detectedEmotion"></app-image-result>
+    </div>
+</div>
+
+<div class="spinner-wrapper" *ngIf="isLoading">
+  <div class="lds-dual-ring"></div>
+</div>
